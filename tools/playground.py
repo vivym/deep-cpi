@@ -15,7 +15,7 @@ class Model(pl.LightningModule):
 
         self.rnn = nn.GRU(1, 8, 2, batch_first=True)
         self.proj = nn.Linear(8, 1)
-    
+
     def training_step(self, batch, batch_idx):
         X, y = batch
         x, _ = self.rnn(X)
