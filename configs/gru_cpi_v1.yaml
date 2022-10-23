@@ -22,7 +22,7 @@ trainer:
   # accelerator: "gpu"
   devices: 1
 
-  logger:
+  # logger:
     # class_path: deep_cpi.utils.logger.WandbLogger
     # init_args:
     #   project: DeepCPI
